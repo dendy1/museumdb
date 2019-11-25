@@ -1,0 +1,1 @@
+<?phpreturn [    'all' => ['index', 'about', 'contact', 'post', 'allposts', 'category'],    'guest' => [],    'user' => [],    'moderator' => ['deletecomment'],    'admin' => ['deletecomment']];
