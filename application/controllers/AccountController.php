@@ -8,7 +8,12 @@ class AccountController extends Controller
 {
     public function register_action()
     {
-        $this->view->layout = 'main';
+        if (isset($_SESSION['account']) and $_SESSION['account']['role_id'] == 2)
+        {
+            $this->view->redirect('/admin');
+        }
+
+        $this->view->layout = 'default';
 
         if (!empty($_POST))
         {
@@ -27,16 +32,17 @@ class AccountController extends Controller
             $this->view->redirect_message('/', 1, 'success', 'Вы зарегистрировались!');
         }
 
-        $params = [
-
-        ];
-
-        $this->view->render('Регистрация', $params);
+        $this->view->render('Регистрация');
     }
 
     public function login_action()
     {
-        $this->view->layout = 'main';
+        if (isset($_SESSION['account']) and $_SESSION['account']['role_id'] == 2)
+        {
+            $this->view->redirect('/admin');
+        }
+
+        $this->view->layout = 'default';
 
         if (!empty($_POST))
         {
@@ -55,16 +61,12 @@ class AccountController extends Controller
             $this->view->redirect_message('/', 1, 'success', 'Успех!', 'Вы успешно авторизировались!');
         }
 
-        $params = [
-
-        ];
-
-        $this->view->render('Вход', $params);
+        $this->view->render('Вход');
     }
 
     public function logout_action()
     {
-        $this->view->layout = 'main';
+        $this->view->layout = 'default';
 
         $this->model->logout();
         $this->view->redirect('/account/login');

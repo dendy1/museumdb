@@ -1,19 +1,3 @@
-<!-- start banner Area БАННЕР-->
-<section class="banner-area relative" id="home">
-    <div class="overlay overlay-bg"></div>
-    <div class="container">
-        <div class="row d-flex align-items-center justify-content-center">
-            <div class="about-content col-lg-12">
-                <h1 class="text-white">
-                    Registration
-                </h1>
-                <p class="text-white link-nav"><a href="/">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="/account/register"> Registration</a></p>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End banner Area -->
-
 <!-- Start contact-page Area -->
 <section class="quote-area pt-100">
     <div class="container">

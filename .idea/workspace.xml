@@ -19,20 +19,23 @@
   <component name="ProjectId" id="1SpTDlXX0aev7CuMpRFgjtyHL9u" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/application/views/admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/application/views/account" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\museum\application\core" />
-      <recent name="C:\xampp\htdocs\museum\application\acl" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\museumdb\application\views\account" />
+      <recent name="C:\xampp\htdocs\museumdb\public\img" />
+      <recent name="C:\xampp\htdocs\museumdb\application\views\errors" />
       <recent name="C:\xampp\htdocs\museumdb\application\views\admin" />
       <recent name="C:\xampp\htdocs\museumdb\application\acl" />
-      <recent name="C:\xampp\htdocs\museumdb\public\js" />
-      <recent name="C:\xampp\htdocs\museumdb\public\vendor" />
-      <recent name="C:\xampp\htdocs\museumdb\public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\museumdb\public\css" />
+      <recent name="C:\xampp\htdocs\museumdb\application\views\account\_new" />
+      <recent name="C:\xampp\htdocs\museumdb\application\views\main\_outdated" />
+      <recent name="C:\xampp\htdocs\museum\application\core" />
+      <recent name="C:\xampp\htdocs\museum\application\acl" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -62,6 +65,7 @@
       <workItem from="1574681321590" duration="1866000" />
       <workItem from="1574686324791" duration="3732000" />
       <workItem from="1574700198461" duration="14312000" />
+      <workItem from="1574749399751" duration="11122000" />
     </task>
     <servers />
   </component>
@@ -73,7 +77,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

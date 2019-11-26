@@ -1,0 +1,1 @@
+<img src="/public/img/404.gif" class="img-fluid"><h2>Страница не найдена</h2>

@@ -8,16 +8,16 @@ class MainController extends Controller
 {
     public function index_action()
     {
-        $this->view->render("Главная страница музея");
+        $this->view->redirect('/account/login');
     }
 
     public function contact_action()
     {
-        $this->view->render("Контакты музея");
+        $this->view->redirect('/account/login');
     }
 
     public function about_action()
     {
-        $this->view->render("Информация о музее");
+        $this->view->redirect('/account/login');
     }
 }

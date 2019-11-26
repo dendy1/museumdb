@@ -1,0 +1,1 @@
+<div class="notfound-404">    <div></div>    <h1><?php echo $code; ?></h1></div><h2>400</h2><p>?????</p>

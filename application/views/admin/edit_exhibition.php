@@ -1,4 +1,4 @@
-<form method="post" action="/admin/edit/exhibition">
+<form method="post" action="/admin/edit/exhibition/<?php echo $exhibition['exhibition_id']; ?>">
     <div class="container mx-auto">
         <div class="form-group">
             <h4><?php echo $page_title; ?></h4>
@@ -6,29 +6,34 @@
 
         <div class="form-group">
             <label for="name">Наименование</label>
-            <input name="name" id="name" type="text" class="form-control" placeholder="Наименование">
+            <input name="name" id="name" type="text" class="form-control" placeholder="Наименование" value="<?php echo $exhibition['name']; ?>">
+        </div>
+
+        <div class="form-group">
+            <label for="description">Описание</label>
+            <textarea name="description" id="description" rows="10" class="form-control" placeholder="Описание"><?php echo $exhibition['description']; ?></textarea>
         </div>
 
         <div class="form-group">
             <label for="country">Страна</label>
-            <input name="country" id="country" type="text" class="form-control" placeholder="Страна">
+            <input name="country" id="country" type="text" class="form-control" placeholder="Страна" value="<?php echo $exhibition['country']; ?>">
         </div>
 
         <div class="form-group">
             <label for="town">Город</label>
-            <input name="town" id="town" type="text" class="form-control" placeholder="Город">
+            <input name="town" id="town" type="text" class="form-control" placeholder="Город" value="<?php echo $exhibition['town']; ?>">
         </div>
 
         <div class="form-group">
             <label for="place">Место проведения</label>
-            <input name="place" id="toplacewn" type="text" class="form-control" placeholder="Место проведения">
+            <input name="place" id="place" type="text" class="form-control" placeholder="Место проведения" value="<?php echo $exhibition['place']; ?>">
         </div>
 
         <div class="form-group">
             <label class="control-label col-xs-3" for="start_date">Дата начала:</label>
             <div class="col-xs-9">
                 <input type="date" min="2015-01-01" max="<?php echo date('Y-m-d'); ?>" class="form-control" id="start_date" name="start_date"
-                       placeholder="Выберите дату создания" required>
+                       placeholder="Выберите дату начала" required value="<?php echo  date('Y-m-d',strtotime($exhibition['start_date'])); ?>">
             </div>
         </div>
 
@@ -36,19 +41,32 @@
             <label class="control-label col-xs-3" for="end_date">Дата конца:</label>
             <div class="col-xs-9">
                 <input type="date" min="2015-01-01" max="<?php echo date('Y-m-d'); ?>" class="form-control" id="end_date" name="end_date"
-                       placeholder="Выберите дату создания" required>
+                       placeholder="Выберите дату конца" required value="<?php echo date('Y-m-d',strtotime($exhibition['end_date'])); ?>">
             </div>
         </div>
 
         <div class="form-group">
-            <label for="holder">ФИО ответственного</label>
-            <input name="holder" id="holder" type="text" class="form-control" placeholder="ФИО">
+            <label for="exhibits_id[]">Экспонаты</label>
+            <select class="form-control" id="exhibits_id[]" name="exhibits_id[]" multiple>
+                <?php foreach ($exhibits as $exhibit): ?>
+                    <option value="<?php echo $exhibit['exhibit_id']; ?>"
+                        <?php foreach ($exhibits_of_exhibition as $exhibit_of_exhibition):
+                            if ($exhibit_of_exhibition['exhibit_id'] == $exhibit['exhibit_id']):
+                                echo 'selected';
+                            endif;
+                        endforeach; ?>
+                    ><?php echo $exhibit['name']; ?></option>
+                <?php endforeach; ?>
+            </select>
         </div>
 
+        <div class="form-group">
+            <label for="holder">ФИО ответственного</label>
+            <input name="holder" id="holder" type="text" class="form-control" placeholder="ФИО" value="<?php echo $exhibition['holder']; ?>">
+        </div>
 
-        <div class="nav form-group justify-content-end">
+        <div class="form-group">
             <button type="submit" id="postButton" class="btn btn-success">Сохранить</button>
-            <a href="/admin/show/exhibitions" id="backButton" class="btn btn-danger">Вернуться</a>
         </div>
 
     </div>
