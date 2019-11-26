@@ -1,0 +1,1 @@
+<?phpreturn [    'all' => [],    'guest' => [],    'user' => [],    'admin' => ['index', 'add_exhibit', 'show_exhibits', 'add_exhibition', 'show_exhibitions', 'add_category', 'show_categories', 'add_location', 'show_locations']];

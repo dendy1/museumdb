@@ -1,0 +1,1 @@
+<?phpreturn [    'all' => ['logout'],    'guest' => ['login', 'register'],    'user' => [],    'admin' => []];

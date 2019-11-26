@@ -13,20 +13,26 @@
       <executable />
     </execution>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1SpTDlXX0aev7CuMpRFgjtyHL9u" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/application/views/admin" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\museum\public" />
-      <recent name="C:\xampp\htdocs\museum\application\views\main" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\museum\application\core" />
       <recent name="C:\xampp\htdocs\museum\application\acl" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\museumdb\application\views\admin" />
+      <recent name="C:\xampp\htdocs\museumdb\application\acl" />
+      <recent name="C:\xampp\htdocs\museumdb\public\js" />
+      <recent name="C:\xampp\htdocs\museumdb\public\vendor" />
+      <recent name="C:\xampp\htdocs\museumdb\public" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -55,10 +61,22 @@
       <workItem from="1574670389486" duration="4000" />
       <workItem from="1574681321590" duration="1866000" />
       <workItem from="1574686324791" duration="3732000" />
+      <workItem from="1574700198461" duration="14312000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
