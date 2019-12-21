@@ -1,4 +1,4 @@
-<form method="post" action="/admin/add/exhibit">
+<form enctype="multipart/form-data" method="post" action="/admin/add/exhibit">
     <div class="container mx-auto">
         <div class="form-group">
             <h4><?php echo $page_title; ?></h4>
@@ -43,6 +43,12 @@
                 <input type="date" min="1000-01-01" max="<?php echo date('Y-m-d'); ?>" class="form-control" id="create_date" name="create_date"
                        placeholder="Выберите дату создания" required>
             </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-xs-3" for="image">Фото экспоната:</label>
+            <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
+            <input name="image" type="file" />
         </div>
 
         <div class="form-group">

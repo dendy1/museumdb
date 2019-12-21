@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae0a81bf-8e5c-40a2-a4fb-2afe0420d5f2" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,12 +16,24 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1SpTDlXX0aev7CuMpRFgjtyHL9u" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/application/views/account" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\museumdb\application\views\main" />
+      <recent name="C:\xampp\htdocs\museumdb\public\css" />
+      <recent name="C:\xampp\htdocs\museumdb\application\views\account\_new" />
+      <recent name="C:\xampp\htdocs\museumdb\application\views\main\_outdated" />
+      <recent name="C:\xampp\htdocs\museum\application\core" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\museumdb\application\views\account" />
       <recent name="C:\xampp\htdocs\museumdb\public\img" />
@@ -30,23 +41,16 @@
       <recent name="C:\xampp\htdocs\museumdb\application\views\admin" />
       <recent name="C:\xampp\htdocs\museumdb\application\acl" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\museumdb\public\css" />
-      <recent name="C:\xampp\htdocs\museumdb\application\views\account\_new" />
-      <recent name="C:\xampp\htdocs\museumdb\application\views\main\_outdated" />
-      <recent name="C:\xampp\htdocs\museum\application\core" />
-      <recent name="C:\xampp\htdocs\museum\application\acl" />
-    </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -66,6 +70,9 @@
       <workItem from="1574686324791" duration="3732000" />
       <workItem from="1574700198461" duration="14312000" />
       <workItem from="1574749399751" duration="11122000" />
+      <workItem from="1576164986313" duration="2270000" />
+      <workItem from="1576759555648" duration="1560000" />
+      <workItem from="1576933095431" duration="1196000" />
     </task>
     <servers />
   </component>
@@ -84,5 +91,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="793" y="421" key="com.intellij.ide.util.TipDialog" timestamp="1576942806420">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state x="793" y="421" key="com.intellij.ide.util.TipDialog/0.0.2194.1194@0.0.2194.1194" timestamp="1576942806420" />
   </component>
 </project>

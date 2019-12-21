@@ -7,7 +7,7 @@
                 <h1 class="text-white">
                     About Us
                 </h1>
-                <p class="text-white link-nav"><a href="../../../../index.php">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="../../../../index.php"> About Us</a></p>
+                <p class="text-white link-nav"><a href="../../../index.php">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="../../../index.php"> About Us</a></p>
             </div>
         </div>
     </div>
@@ -49,7 +49,7 @@
         <div class="single-info row mt-40">
             <div class="col-lg-6 col-md-12 mt-120 text-center no-padding info-left">
                 <div class="info-thumb">
-                    <img src="../../../../public/img/pages/about-img.jpg" class="img-fluid" alt="">
+                    <img src="../../../public/img/pages/about-img.jpg" class="img-fluid" alt="">
                 </div>
             </div>
             <div class="col-lg-6 col-md-12 no-padding info-rigth">

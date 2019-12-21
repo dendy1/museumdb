@@ -7,7 +7,7 @@
                 <h1 class="text-white">
                     Contact Us
                 </h1>
-                <p class="text-white link-nav"><a href="../../../../index.php">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="../../../../index.php"> Contact Us</a></p>
+                <p class="text-white link-nav"><a href="../../../index.php">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="../../../index.php"> Contact Us</a></p>
             </div>
         </div>
     </div>
@@ -49,7 +49,7 @@
                 </div>
             </div>
             <div class="col-lg-8">
-                <form class="form-area " id="myForm" action="../../../../index.php" method="post" class="contact-form text-right">
+                <form class="form-area " id="myForm" action="../../../index.php" method="post" class="contact-form text-right">
                     <div class="row">
                         <div class="col-lg-6 form-group">
                             <input name="name" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mb-20 form-control" required="" type="text">

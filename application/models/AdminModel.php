@@ -56,6 +56,22 @@ class AdminModel extends Model
         ];
         $this->db->query('INSERT INTO exhibit_translate VALUES (:id, :language_id, :exhibit_id, :name, :description, :author);', $params);
 
+        /*
+        $path = '/public/img/exhibits/';
+        $file = explode('.', $_FILES['image']['name']);
+        $ext = array_pop($file);
+        $new_name = $exhibit_id . '.' . $ext;
+        $full_path = $path . $new_name;
+
+        if ($_FILES['image']['error'] == 0)
+        {
+            if (!move_uploaded_file($_FILES['image']['tmp_name'], $full_path))
+            {
+                $this->message = "Ошибка сохранения фото!";
+                return false;
+            }
+        }
+        */
         return $this->db->last_insert_id();
     }
 

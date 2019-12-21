@@ -32,7 +32,7 @@
         <div class="row">
             <div class="active-exibition-carusel">
                 <div class="single-exibition item">
-                    <img src="../../../../public/img/e1.jpg" alt="">
+                    <img src="../../../public/img/e1.jpg" alt="">
                     <ul class="tags">
                         <li><a href="#">Travel</a></li>
                         <li><a href="#">Life style</a></li>
@@ -45,7 +45,7 @@
                 </div>
 
                 <div class="single-exibition item">
-                    <img src="../../../../public/img/e2.jpg" alt="">
+                    <img src="../../../public/img/e2.jpg" alt="">
                     <ul class="tags">
                         <li><a href="#">Travel</a></li>
                         <li><a href="#">Life style</a></li>
@@ -58,7 +58,7 @@
                 </div>
 
                 <div class="single-exibition item">
-                    <img src="../../../../public/img/e3.jpg" alt="">
+                    <img src="../../../public/img/e3.jpg" alt="">
                     <ul class="tags">
                         <li><a href="#">Travel</a></li>
                         <li><a href="#">Life style</a></li>
@@ -70,20 +70,7 @@
                     <h6 class="date">31st January, 2018</h6>
                 </div>
                 <div class="single-exibition item">
-                    <img src="../../../../public/img/e1.jpg" alt="">
-                    <ul class="tags">
-                        <li><a href="#">Travel</a></li>
-                        <li><a href="#">Life style</a></li>
-                    </ul>
-                    <a href="#"><h4>Portable latest blog for women</h4></a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
-                    </p>
-                    <h6 class="date">31st January, 2018</h6>
-                </div>
-
-                <div class="single-exibition item">
-                    <img src="../../../../public/img/e2.jpg" alt="">
+                    <img src="../../../public/img/e1.jpg" alt="">
                     <ul class="tags">
                         <li><a href="#">Travel</a></li>
                         <li><a href="#">Life style</a></li>
@@ -96,19 +83,7 @@
                 </div>
 
                 <div class="single-exibition item">
-                    <img src="../../../../public/img/e3.jpg" alt="">
-                    <ul class="tags">
-                        <li><a href="#">Travel</a></li>
-                        <li><a href="#">Life style</a></li>
-                    </ul>
-                    <a href="#"><h4>Portable latest blog for women</h4></a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
-                    </p>
-                    <h6 class="date">31st January, 2018</h6>
-                </div>
-                <div class="single-exibition item">
-                    <img src="../../../../public/img/e1.jpg" alt="">
+                    <img src="../../../public/img/e2.jpg" alt="">
                     <ul class="tags">
                         <li><a href="#">Travel</a></li>
                         <li><a href="#">Life style</a></li>
@@ -121,7 +96,19 @@
                 </div>
 
                 <div class="single-exibition item">
-                    <img class="img-fluid" src="../../../../public/img/e2.jpg" alt="">
+                    <img src="../../../public/img/e3.jpg" alt="">
+                    <ul class="tags">
+                        <li><a href="#">Travel</a></li>
+                        <li><a href="#">Life style</a></li>
+                    </ul>
+                    <a href="#"><h4>Portable latest blog for women</h4></a>
+                    <p>
+                        Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
+                    </p>
+                    <h6 class="date">31st January, 2018</h6>
+                </div>
+                <div class="single-exibition item">
+                    <img src="../../../public/img/e1.jpg" alt="">
                     <ul class="tags">
                         <li><a href="#">Travel</a></li>
                         <li><a href="#">Life style</a></li>
@@ -134,7 +121,20 @@
                 </div>
 
                 <div class="single-exibition item">
-                    <img class="img-fluid" src="../../../../public/img/e3.jpg" alt="">
+                    <img class="img-fluid" src="../../../public/img/e2.jpg" alt="">
+                    <ul class="tags">
+                        <li><a href="#">Travel</a></li>
+                        <li><a href="#">Life style</a></li>
+                    </ul>
+                    <a href="#"><h4>Portable latest blog for women</h4></a>
+                    <p>
+                        Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
+                    </p>
+                    <h6 class="date">31st January, 2018</h6>
+                </div>
+
+                <div class="single-exibition item">
+                    <img class="img-fluid" src="../../../public/img/e3.jpg" alt="">
                     <ul class="tags">
                         <li><a href="#">Travel</a></li>
                         <li><a href="#">Life style</a></li>
@@ -163,20 +163,20 @@
             </div>
         </div>
         <div id="grid-container" class="row">
-            <a class="single-gallery" href="../../../../public/img/g1.jpg"><img class="grid-item" src="../../../../public/img/g1.jpg"></a>
-            <a class="single-gallery" href="../../../../public/img/g2.jpg"><img class="grid-item" src="../../../../public/img/g2.jpg"></a>
-            <a class="single-gallery" href="../../../../public/img/g3.jpg"><img class="grid-item" src="../../../../public/img/g3.jpg"></a>
-            <a class="single-gallery" href="../../../../public/img/g4.jpg"><img class="grid-item" src="../../../../public/img/g4.jpg"></a>
-            <a class="single-gallery" href="../../../../public/img/g5.jpg"><img class="grid-item" src="../../../../public/img/g5.jpg"></a>
-            <a class="single-gallery" href="../../../../public/img/g6.jpg"><img class="grid-item" src="../../../../public/img/g6.jpg"></a>
-            <a class="single-gallery" href="../../../../public/img/g7.jpg"><img class="grid-item" src="../../../../public/img/g7.jpg"></a>
-            <a class="single-gallery" href="../../../../public/img/g8.jpg"><img class="grid-item" src="../../../../public/img/g8.jpg"></a>
-            <a class="single-gallery" href="../../../../public/img/g9.jpg"><img class="grid-item" src="../../../../public/img/g9.jpg"></a>
-            <a class="single-gallery" href="../../../../public/img/g10.jpg"><img class="grid-item" src="../../../../public/img/g10.jpg"></a>
-            <a class="single-gallery" href="../../../../public/img/g11.jpg"><img class="grid-item" src="../../../../public/img/g11.jpg"></a>
-            <a class="single-gallery" href="../../../../public/img/g12.jpg"><img class="grid-item" src="../../../../public/img/g12.jpg"></a>
-            <a class="single-gallery" href="../../../../public/img/g4.jpg"><img class="grid-item" src="../../../../public/img/g4.jpg"></a>
-            <a class="single-gallery" href="../../../../public/img/g5.jpg"><img class="grid-item" src="../../../../public/img/g5.jpg"></a>
+            <a class="single-gallery" href="../../../public/img/g1.jpg"><img class="grid-item" src="../../../public/img/g1.jpg"></a>
+            <a class="single-gallery" href="../../../public/img/g2.jpg"><img class="grid-item" src="../../../public/img/g2.jpg"></a>
+            <a class="single-gallery" href="../../../public/img/g3.jpg"><img class="grid-item" src="../../../public/img/g3.jpg"></a>
+            <a class="single-gallery" href="../../../public/img/g4.jpg"><img class="grid-item" src="../../../public/img/g4.jpg"></a>
+            <a class="single-gallery" href="../../../public/img/g5.jpg"><img class="grid-item" src="../../../public/img/g5.jpg"></a>
+            <a class="single-gallery" href="../../../public/img/g6.jpg"><img class="grid-item" src="../../../public/img/g6.jpg"></a>
+            <a class="single-gallery" href="../../../public/img/g7.jpg"><img class="grid-item" src="../../../public/img/g7.jpg"></a>
+            <a class="single-gallery" href="../../../public/img/g8.jpg"><img class="grid-item" src="../../../public/img/g8.jpg"></a>
+            <a class="single-gallery" href="../../../public/img/g9.jpg"><img class="grid-item" src="../../../public/img/g9.jpg"></a>
+            <a class="single-gallery" href="../../../public/img/g10.jpg"><img class="grid-item" src="../../../public/img/g10.jpg"></a>
+            <a class="single-gallery" href="../../../public/img/g11.jpg"><img class="grid-item" src="../../../public/img/g11.jpg"></a>
+            <a class="single-gallery" href="../../../public/img/g12.jpg"><img class="grid-item" src="../../../public/img/g12.jpg"></a>
+            <a class="single-gallery" href="../../../public/img/g4.jpg"><img class="grid-item" src="../../../public/img/g4.jpg"></a>
+            <a class="single-gallery" href="../../../public/img/g5.jpg"><img class="grid-item" src="../../../public/img/g5.jpg"></a>
         </div>
     </div>
 </section>
