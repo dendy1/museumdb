@@ -8,249 +8,248 @@ use function Sodium\add;
 
 class AdminController extends Controller
 {
-    public function index_action()
+    public function indexAction()
     {
         $this->view->render('Панель управления');
     }
 
-    public function add_exhibit_action()
+    public function addExhibitAction()
     {
         if (!empty($_POST))
         {
-            if (!$this->model->validate_exhibit())
+            if (!$this->model->validateExhibit())
             {
-                $this->view->simple_message('error', 'Ошибка!', $this->model->message);
+                $this->view->simpleMessage('error', 'Ошибка!', $this->model->message);
             }
             else
             {
-                $id = $this->model->add_exhibit();
+                $id = $this->model->addExhibit();
 
                 if (!$id)
                 {
-                    $this->view->simple_message('error', 'Ошибка!', 'Ошибка запроса к БД');
+                    $this->view->simpleMessage('error', 'Ошибка!', 'Ошибка запроса к БД');
                 }
 
-                $this->view->redirect_message('/admin/show/exhibit', 2, 'success', 'Успех!', 'Экспонат успешно добавлен!');
+                $this->view->redirectMessage('/admin/show/exhibit', 2, 'success', 'Успех!', 'Экспонат успешно добавлен!');
             }
         }
 
         $params = [
-            'categories' => $this->model->get_categories(),
-            'locations' => $this->model->get_locations()
+            'categories' => $this->model->getCategories(),
+            'locations' => $this->model->getLocations()
         ];
 
         $this->view->render('Добавление экспоната', $params);
     }
 
-    public function add_exhibition_action()
+    public function addExhibitionAction()
     {
         if (!empty($_POST))
         {
-            if (!$this->model->validate_exhibition())
+            if (!$this->model->validateExhibition())
             {
-                $this->view->simple_message('error', 'Ошибка!', $this->model->message);
+                $this->view->simpleMessage('error', 'Ошибка!', $this->model->message);
             }
             else
             {
-                $id = $this->model->add_exhibition();
+                $id = $this->model->addExhibition();
 
                 if (!$id)
                 {
-                    $this->view->simple_message('error', 'Ошибка!', 'Ошибка запроса к БД');
+                    $this->view->simpleMessage('error', 'Ошибка!', 'Ошибка запроса к БД');
                 }
 
-                $this->view->redirect_message('/admin/show/exhibition', 2, 'success', 'Успех!', 'Тематический раздел успешно добавлен!');
+                $this->view->redirectMessage('/admin/show/exhibition', 2, 'success', 'Успех!', 'Тематический раздел успешно добавлен!');
             }
         }
 
         $params = [
-            'exhibits' => $this->model->get_exhibits()
+            'exhibits' => $this->model->getExhibits()
         ];
 
         $this->view->render('Добавление выставки', $params);
     }
 
-    public function add_category_action()
+    public function addCategoryAction()
     {
         if (!empty($_POST))
         {
-            if (!$this->model->validate_category())
+            if (!$this->model->validateCategory())
             {
-                $this->view->simple_message('error', 'Ошибка!', $this->model->message);
+                $this->view->simpleMessage('error', 'Ошибка!', $this->model->message);
             }
             else
             {
-                $id = $this->model->add_category();
+                $id = $this->model->addCategory();
 
                 if (!$id)
                 {
-                    $this->view->simple_message('error', 'Ошибка!', 'Ошибка запроса к БД');
+                    $this->view->simpleMessage('error', 'Ошибка!', 'Ошибка запроса к БД');
                 }
 
-                $this->view->redirect_message('/admin/show/category', 2, 'success', 'Успех!', 'Тематический раздел успешно добавлен!');
+                $this->view->redirectMessage('/admin/show/category', 2, 'success', 'Успех!', 'Тематический раздел успешно добавлен!');
             }
         }
 
         $this->view->render('Добавление тематического раздела');
     }
 
-    public function add_location_action()
+    public function addLocationAction()
     {
         if (!empty($_POST))
         {
-            if (!$this->model->validate_location())
+            if (!$this->model->validateLocation())
             {
-                $this->view->simple_message('error', 'Ошибка!', $this->model->message);
+                $this->view->simpleMessage('error', 'Ошибка!', $this->model->message);
             }
             else
             {
-                $id = $this->model->add_location();
+                $id = $this->model->addLocation();
 
                 if (!$id)
                 {
-                    $this->view->simple_message('error', 'Ошибка!', 'Ошибка запроса к БД');
+                    $this->view->simpleMessage('error', 'Ошибка!', 'Ошибка запроса к БД');
                 }
 
-                $this->view->redirect_message('/admin/show/location', 2, 'success', 'Успех!', 'Местоположение успешно добавлено!');
+                $this->view->redirectMessage('/admin/show/location', 2, 'success', 'Успех!', 'Местоположение успешно добавлено!');
             }
         }
 
         $this->view->render('Добавление местоположения');
     }
 
-    public function edit_exhibit_action()
+    public function editExhibitAction()
     {
         if (!empty($_POST))
         {
-            if (!$this->model->validate_exhibit())
+            if (!$this->model->validateExhibit())
             {
-                $this->view->simple_message('error', 'Ошибка!', $this->model->message);
+                $this->view->simpleMessage('error', 'Ошибка!', $this->model->message);
             }
             else
             {
-                $id = $this->model->edit_exhibit($this->route['id']);
+                $id = $this->model->editExhibit($this->route['id']);
 
                 if (!$id)
                 {
-                    $this->view->simple_message('error', 'Ошибка!', 'Ошибка запроса к БД');
+                    $this->view->simpleMessage('error', 'Ошибка!', 'Ошибка запроса к БД');
                 }
 
-                $this->view->redirect_message('/admin/show/exhibit', 2, 'success', 'Успех!', 'Экспонат успешно изменён!');
+                $this->view->redirectMessage('/admin/show/exhibit', 2, 'success', 'Успех!', 'Экспонат успешно изменён!');
             }
         }
 
         $params = [
-            'exhibit' => $this->model->get_exhibit_by_id($this->route['id'])[0],
-            'categories' => $this->model->get_categories(),
-            'locations' => $this->model->get_locations()
+            'exhibit' => $this->model->getExhibitById($this->route['id'])[0],
+            'categories' => $this->model->getCategories(),
+            'locations' => $this->model->getLocations()
         ];
 
         $this->view->render('Редактирование экспоната', $params);
     }
 
-    public function edit_exhibition_action()
+    public function editExhibitionAction()
     {
         if (!empty($_POST))
         {
-            if (!$this->model->validate_exhibition())
+            if (!$this->model->validateExhibition())
             {
-                $this->view->simple_message('error', 'Ошибка!', $this->model->message);
+                $this->view->simpleMessage('error', 'Ошибка!', $this->model->message);
             }
             else
             {
-                $id = $this->model->edit_exhibition($this->route['id']);
+                $id = $this->model->editExhibition($this->route['id']);
 
                 if (!$id)
                 {
-                    $this->view->simple_message('error', 'Ошибка!', 'Ошибка запроса к БД');
+                    $this->view->simpleMessage('error', 'Ошибка!', 'Ошибка запроса к БД');
                 }
 
-                $this->view->redirect_message('/admin/show/exhibition', 2, 'success', 'Успех!', 'Выставка успешно изменёна!');
+                $this->view->redirectMessage('/admin/show/exhibition', 2, 'success', 'Успех!', 'Выставка успешно изменёна!');
             }
         }
 
         $params = [
-            'exhibition' => $this->model->get_exhibition_by_id($this->route['id'])[0],
-            'exhibits' => $this->model->get_exhibits(),
-            'exhibits_of_exhibition' => $this->model->get_exhibits_of_exhibition($this->route['id'])
+            'exhibition' => $this->model->getExhibitionById($this->route['id'])[0],
+            'exhibits' => $this->model->getExhibits(),
+            'exhibits_of_exhibition' => $this->model->getExhibitsOfExhibition($this->route['id'])
         ];
 
         $this->view->render('Редактирование выставки', $params);
     }
 
-    public function edit_category_action()
+    public function editCategoryAction()
     {
         if (!empty($_POST))
         {
-            if (!$this->model->validate_category())
+            if (!$this->model->validateCategory())
             {
-                $this->view->simple_message('error', 'Ошибка!', $this->model->message);
+                $this->view->simpleMessage('error', 'Ошибка!', $this->model->message);
             }
             else
             {
-                $id = $this->model->edit_category($this->route['id']);
+                $id = $this->model->editCategory($this->route['id']);
 
                 if (!$id)
                 {
-                    $this->view->simple_message('error', 'Ошибка!', 'Ошибка запроса к БД');
+                    $this->view->simpleMessage('error', 'Ошибка!', 'Ошибка запроса к БД');
                 }
 
-                $this->view->redirect_message('/admin/show/category', 2, 'success', 'Успех!', 'Тематический раздел успешно изменён!');
+                $this->view->redirectMessage('/admin/show/category', 2, 'success', 'Успех!', 'Тематический раздел успешно изменён!');
             }
         }
 
         $params = [
-            'category' => $this->model->get_category_by_id($this->route['id'])[0]
+            'category' => $this->model->getCategoryById($this->route['id'])[0]
         ];
 
         $this->view->render('Редактирование тематического раздела', $params);
     }
 
-    public function edit_location_action()
+    public function editLocationAction()
     {
         if (!empty($_POST))
         {
-            if (!$this->model->validate_location())
+            if (!$this->model->validateLocation())
             {
-                $this->view->simple_message('error', 'Ошибка!', $this->model->message);
+                $this->view->simpleMessage('error', 'Ошибка!', $this->model->message);
             }
             else
             {
-                $id = $this->model->edit_location($this->route['id']);
+                $id = $this->model->editLocation($this->route['id']);
 
                 if (!$id)
                 {
-                    $this->view->simple_message('error', 'Ошибка!', 'Ошибка запроса к БД');
+                    $this->view->simpleMessage('error', 'Ошибка!', 'Ошибка запроса к БД');
                 }
 
-                $this->view->redirect_message('/admin/show/location', 2, 'success', 'Успех!', 'Местоположение успешно изменёно!');
+                $this->view->redirectMessage('/admin/show/location', 2, 'success', 'Успех!', 'Местоположение успешно изменёно!');
             }
         }
 
         $params = [
-            'location' => $this->model->get_location_by_id($this->route['id'])[0]
+            'location' => $this->model->getLocationById($this->route['id'])[0]
         ];
 
         $this->view->render('Редактирование местоположения', $params);
     }
 
-    public function show_exhibits_action()
+    public function showExhibitsAction()
     {
         $params = [
-            'exhibits' => $this->model->get_exhibits()
+            'exhibits' => $this->model->getExhibits()
         ];
 
         $this->view->render('Список экспонатов', $params);
     }
 
-    public function show_exhibitions_action()
+    public function showExhibitionsAction()
     {
         $exhibits = array();
-        $exhibitions = $this->model->get_exhibitions();
+        $exhibitions = $this->model->getExhibitions();
 
         foreach ($exhibitions as $exhibition):
-            //array_push($exhibits, $this->model->get_exhibits_of_exhibition($exhibition['exhibition_id']));
-            $exhibits[$exhibition['exhibition_id']] = $this->model->get_exhibits_of_exhibition($exhibition['exhibition_id']);
+            $exhibits[$exhibition['exhibition_id']] = $this->model->getExhibitsOfExhibition($exhibition['exhibition_id']);
         endforeach;
 
         $params = [
@@ -261,45 +260,45 @@ class AdminController extends Controller
         $this->view->render('Список выставок', $params);
     }
 
-    public function show_categories_action()
+    public function showCategoriesAction()
     {
         $params = [
-            'categories' => $this->model->get_categories()
+            'categories' => $this->model->getCategories()
         ];
 
         $this->view->render('Список тематических разделов', $params);
     }
 
-    public function show_locations_action()
+    public function showLocationsAction()
     {
         $params = [
-            'locations' => $this->model->get_locations()
+            'locations' => $this->model->getLocations()
         ];
 
         $this->view->render('Список местоположений', $params);
     }
 
-    public function delete_exhibit_action()
+    public function deleteExhibitAction()
     {
-        $this->model->delete_exhibit($this->route['id']);
+        $this->model->deleteExhibit($this->route['id']);
         $this->view->redirect('/admin/show/exhibit');
     }
 
-    public function delete_exhibition_action()
+    public function deleteExhibitionAction()
     {
-        $this->model->delete_exhibition($this->route['id']);
+        $this->model->deleteExhibition($this->route['id']);
         $this->view->redirect('/admin/show/exhibition');
     }
 
-    public function delete_category_action()
+    public function deleteCategoryAction()
     {
-        $this->model->delete_category($this->route['id']);
+        $this->model->deleteCategory($this->route['id']);
         $this->view->redirect('/admin/show/category');
     }
 
-    public function delete_location_action()
+    public function deleteLocationAction()
     {
-        $this->model->delete_location($this->route['id']);
+        $this->model->deleteLocation($this->route['id']);
         $this->view->redirect('/admin/show/location');
     }
 }

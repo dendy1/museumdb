@@ -6,7 +6,7 @@ use application\core\Controller;
 
 class AccountController extends Controller
 {
-    public function register_action()
+    public function registerAction()
     {
         if (isset($_SESSION['account']) and $_SESSION['account']['role_id'] == 2)
         {
@@ -21,21 +21,21 @@ class AccountController extends Controller
                 or $this->model->user_email_exist($_POST['email'])
                 or $this->model->user_login_exist($_POST['login']))
             {
-                $this->view->simple_message('error', 'Ошибка!', $this->model->message);
+                $this->view->simpleMessage('error', 'Ошибка!', $this->model->message);
             }
 
             if (!$this->model->register())
             {
-                $this->view->simple_message('error', 'Ошибка!', 'Ошибка обращения к БД');
+                $this->view->simpleMessage('error', 'Ошибка!', 'Ошибка обращения к БД');
             }
 
-            $this->view->redirect_message('/', 1, 'success', 'Вы зарегистрировались!');
+            $this->view->redirectMessage('/', 1, 'success', 'Вы зарегистрировались!');
         }
 
         $this->view->render('Регистрация');
     }
 
-    public function login_action()
+    public function loginAction()
     {
         if (isset($_SESSION['account']) and $_SESSION['account']['role_id'] == 2)
         {
@@ -46,25 +46,25 @@ class AccountController extends Controller
 
         if (!empty($_POST))
         {
-            if (!$this->model->login_validation())
+            if (!$this->model->loginValidation())
             {
-                $this->view->simple_message('error', 'Ошибка!', $this->model->message);
+                $this->view->simpleMessage('error', 'Ошибка!', $this->model->message);
             }
 
             $this->model->login();
 
             if ($_SESSION['account']['role_id'] == 2)
             {
-                $this->view->redirect_message('/admin', 1, 'success', 'Успех!', 'Вы успешно авторизировались!');
+                $this->view->redirectMessage('/admin', 1, 'success', 'Успех!', 'Вы успешно авторизировались!');
             }
 
-            $this->view->redirect_message('/', 1, 'success', 'Успех!', 'Вы успешно авторизировались!');
+            $this->view->redirectMessage('/', 1, 'success', 'Успех!', 'Вы успешно авторизировались!');
         }
 
         $this->view->render('Вход');
     }
 
-    public function logout_action()
+    public function logoutAction()
     {
         $this->view->layout = 'default';
 

@@ -7,7 +7,7 @@ use application\config\Config;
 
 class AccountModel extends Model
 {
-    public function register_validation($input)
+    public function registerValidation($input)
     {
         foreach ($input as $value)
         {
@@ -29,7 +29,7 @@ class AccountModel extends Model
         return true;
     }
 
-    public function user_login_exist($login)
+    public function userLoginExist($login)
     {
         $params = [
             'login' => $login
@@ -44,7 +44,7 @@ class AccountModel extends Model
         return false;
     }
 
-    public function user_email_exist($email)
+    public function userEmailExist($email)
     {
         $params = [
             'email' => $email
@@ -76,10 +76,10 @@ class AccountModel extends Model
 
         $this->db->query('INSERT INTO user VALUES (:user_id, :role_id, :login, :password, :email, :create_date)', $user_params);
 
-        return $this->db->last_insert_id();
+        return $this->db->lastInsertId();
     }
 
-    public function login_validation()
+    public function loginValidation()
     {
         $params = [
             'login' => $_POST['login'],

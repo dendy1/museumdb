@@ -1,1 +1,1 @@
-<?phpreturn [    'all' => ['index', 'about', 'contact'],    'guest' => [],    'user' => [],    'admin' => []];
+<?phpreturn [    'all' => ['index', 'about', 'contact', 'exhibit', 'exhibition', 'category'],    'guest' => [],    'user' => [],    'admin' => []];

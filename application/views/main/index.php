@@ -1,150 +1,61 @@
-<!-- start banner Area БАННЕР БЛИЖАЙШАЯ ВЫСТАВКА-->
 <section class="banner-area relative" id="home">
     <div class="overlay overlay-bg"></div>
     <div class="container">
-        <div class="row fullscreen d-flex align-items-center justify-content-center">
-            <div class="banner-content col-lg-8">
-                <h6 class="text-white">Openning on 21st February, 2018</h6>
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="about-content col-lg-12">
+                <h6 class="text-white pb-20"><?php echo date_format(date_create($close_exhibition['start_date']), "d.m.Y H:i"); ?> &#8212; <?php echo date_format(date_create($close_exhibition['end_date']), "d.m.Y H:i"); ?></h6>
                 <h1 class="text-white">
-                    Exhibition on Modern Era
+                    <?php echo $close_exhibition['name']; ?>
                 </h1>
-                <p class="pt-20 pb-20 text-white">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.  sed do eiusmod tempor incididunt..
+                <p class="pt-10 pb-10 text-white">
+                    <?php echo $close_exhibition['description']; ?>
                 </p>
-                <a href="#" class="primary-btn text-uppercase">Get Started</a>
+                <p class="pb-30 text-white">
+                    <?php echo $close_exhibition['country']. ', ' . $close_exhibition['town']. ', ' . $close_exhibition['place']; ?>
+                </p>
+                <a href="/exhibition/<?php echo $close_exhibition['exhibition_id']; ?>" class="primary-btn text-uppercase">Полная информация</a>
             </div>
         </div>
     </div>
 </section>
-<!-- End banner Area -->
 
-<!-- Start exibition Area ВЫСТАВКИ-->
+
 <section class="exibition-area section-gap" id="exhibitions">
     <div class="container">
         <div class="row d-flex justify-content-center">
             <div class="menu-content pb-60 col-lg-10">
                 <div class="title text-center">
-                    <h1 class="mb-10">Ongoing Exhibitions from the scratch</h1>
-                    <p>Who are in extremely love with eco friendly system.</p>
+                    <h1 class="mb-10">Выставки</h1>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="active-exibition-carusel">
-                <div class="single-exibition item">
-                    <img src="../../../public/img/e1.jpg" alt="">
-                    <ul class="tags">
-                        <li><a href="#">Travel</a></li>
-                        <li><a href="#">Life style</a></li>
-                    </ul>
-                    <a href="#"><h4>Portable latest blog for women</h4></a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
-                    </p>
-                    <h6 class="date">31st January, 2018</h6>
-                </div>
-
-                <div class="single-exibition item">
-                    <img src="../../../public/img/e2.jpg" alt="">
-                    <ul class="tags">
-                        <li><a href="#">Travel</a></li>
-                        <li><a href="#">Life style</a></li>
-                    </ul>
-                    <a href="#"><h4>Portable latest blog for women</h4></a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
-                    </p>
-                    <h6 class="date">31st January, 2018</h6>
-                </div>
-
-                <div class="single-exibition item">
-                    <img src="../../../public/img/e3.jpg" alt="">
-                    <ul class="tags">
-                        <li><a href="#">Travel</a></li>
-                        <li><a href="#">Life style</a></li>
-                    </ul>
-                    <a href="#"><h4>Portable latest blog for women</h4></a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
-                    </p>
-                    <h6 class="date">31st January, 2018</h6>
-                </div>
-                <div class="single-exibition item">
-                    <img src="../../../public/img/e1.jpg" alt="">
-                    <ul class="tags">
-                        <li><a href="#">Travel</a></li>
-                        <li><a href="#">Life style</a></li>
-                    </ul>
-                    <a href="#"><h4>Portable latest blog for women</h4></a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
-                    </p>
-                    <h6 class="date">31st January, 2018</h6>
-                </div>
-
-                <div class="single-exibition item">
-                    <img src="../../../public/img/e2.jpg" alt="">
-                    <ul class="tags">
-                        <li><a href="#">Travel</a></li>
-                        <li><a href="#">Life style</a></li>
-                    </ul>
-                    <a href="#"><h4>Portable latest blog for women</h4></a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
-                    </p>
-                    <h6 class="date">31st January, 2018</h6>
-                </div>
-
-                <div class="single-exibition item">
-                    <img src="../../../public/img/e3.jpg" alt="">
-                    <ul class="tags">
-                        <li><a href="#">Travel</a></li>
-                        <li><a href="#">Life style</a></li>
-                    </ul>
-                    <a href="#"><h4>Portable latest blog for women</h4></a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
-                    </p>
-                    <h6 class="date">31st January, 2018</h6>
-                </div>
-                <div class="single-exibition item">
-                    <img src="../../../public/img/e1.jpg" alt="">
-                    <ul class="tags">
-                        <li><a href="#">Travel</a></li>
-                        <li><a href="#">Life style</a></li>
-                    </ul>
-                    <a href="#"><h4>Portable latest blog for women</h4></a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
-                    </p>
-                    <h6 class="date">31st January, 2018</h6>
-                </div>
-
-                <div class="single-exibition item">
-                    <img class="img-fluid" src="../../../public/img/e2.jpg" alt="">
-                    <ul class="tags">
-                        <li><a href="#">Travel</a></li>
-                        <li><a href="#">Life style</a></li>
-                    </ul>
-                    <a href="#"><h4>Portable latest blog for women</h4></a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
-                    </p>
-                    <h6 class="date">31st January, 2018</h6>
-                </div>
-
-                <div class="single-exibition item">
-                    <img class="img-fluid" src="../../../public/img/e3.jpg" alt="">
-                    <ul class="tags">
-                        <li><a href="#">Travel</a></li>
-                        <li><a href="#">Life style</a></li>
-                    </ul>
-                    <a href="#"><h4>Portable latest blog for women</h4></a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
-                    </p>
-                    <h6 class="date">31st January, 2018</h6>
-                </div>
+                <?php foreach ($ongoing_exhibitions as $exhibition): ?>
+                    <div class="card text-center">
+                        <a href="/exhibition/<?php echo $exhibition['exhibition_id']; ?>">
+                            <div class="card-header">
+                                <img
+                                     src="/public/img/exhibitions/<?php echo $exhibition['exhibition_id']; ?>"
+                                     onerror="this.src='/public/img/exhibitions/exhibition.png'">
+                            </div>
+                        </a>
+                        <div class="card-body justify-content-center">
+                            <h3 class="card-title">
+                                <?php echo $exhibition['name']; ?>
+                            </h3>
+                            <p class="card-text">
+                                <?php echo $exhibition['description']; ?>
+                            </p>
+                            <p class="card-text">
+                                <?php echo $exhibition['country']. ', ' . $exhibition['town']. ', ' . $exhibition['place']; ?>
+                            </p>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <?php echo date_format(date_create($exhibition['start_date']), "d.m.Y H:i"); ?> &#8212; <?php echo date_format(date_create($exhibition['end_date']), "d.m.Y H:i"); ?>
+                        </div>
+                    </div>
+                <?php endforeach ?>
             </div>
         </div>
     </div>
@@ -157,27 +68,19 @@
         <div class="row d-flex justify-content-center">
             <div class="menu-content pb-70 col-lg-8">
                 <div class="title text-center">
-                    <h1 class="mb-10 text-white">Our Exhibition Gallery</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua.</p>
+                    <h1 class="mb-10 text-white">Галерея экспонатов</h1>
                 </div>
             </div>
         </div>
         <div id="grid-container" class="row">
-            <a class="single-gallery" href="../../../public/img/g1.jpg"><img class="grid-item" src="../../../public/img/g1.jpg"></a>
-            <a class="single-gallery" href="../../../public/img/g2.jpg"><img class="grid-item" src="../../../public/img/g2.jpg"></a>
-            <a class="single-gallery" href="../../../public/img/g3.jpg"><img class="grid-item" src="../../../public/img/g3.jpg"></a>
-            <a class="single-gallery" href="../../../public/img/g4.jpg"><img class="grid-item" src="../../../public/img/g4.jpg"></a>
-            <a class="single-gallery" href="../../../public/img/g5.jpg"><img class="grid-item" src="../../../public/img/g5.jpg"></a>
-            <a class="single-gallery" href="../../../public/img/g6.jpg"><img class="grid-item" src="../../../public/img/g6.jpg"></a>
-            <a class="single-gallery" href="../../../public/img/g7.jpg"><img class="grid-item" src="../../../public/img/g7.jpg"></a>
-            <a class="single-gallery" href="../../../public/img/g8.jpg"><img class="grid-item" src="../../../public/img/g8.jpg"></a>
-            <a class="single-gallery" href="../../../public/img/g9.jpg"><img class="grid-item" src="../../../public/img/g9.jpg"></a>
-            <a class="single-gallery" href="../../../public/img/g10.jpg"><img class="grid-item" src="../../../public/img/g10.jpg"></a>
-            <a class="single-gallery" href="../../../public/img/g11.jpg"><img class="grid-item" src="../../../public/img/g11.jpg"></a>
-            <a class="single-gallery" href="../../../public/img/g12.jpg"><img class="grid-item" src="../../../public/img/g12.jpg"></a>
-            <a class="single-gallery" href="../../../public/img/g4.jpg"><img class="grid-item" src="../../../public/img/g4.jpg"></a>
-            <a class="single-gallery" href="../../../public/img/g5.jpg"><img class="grid-item" src="../../../public/img/g5.jpg"></a>
+            <?php foreach ($exhibits as $exhibit): ?>
+                <a class="single-gallery" href="/exhibit/<?php echo $exhibit["id"]; ?>">
+                    <div class="container">
+                        <img class="grid-item" src="/public/img/exhibits/<?php echo $exhibit["exhibit_id"]; ?>" onerror="this.src='/public/img/exhibits/exhibit.png'">
+                        <div class="centered"><?php echo $exhibit["name"]; ?></div>
+                    </div>
+                </a>
+            <?php endforeach ?>
         </div>
     </div>
 </section>
-<!-- End gallery Area -->
