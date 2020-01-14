@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae0a81bf-8e5c-40a2-a4fb-2afe0420d5f2" name="Default Changelist" comment="" />
+    <list default="true" id="ae0a81bf-8e5c-40a2-a4fb-2afe0420d5f2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/admin/addExhibition.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/addExhibition.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/admin/add_category.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/_old/add_category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/admin/add_exhibit.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/_old/add_exhibit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/admin/add_exhibition.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/_old/add_exhibition.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/admin/add_location.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/_old/add_location.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/admin/edit_category.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/_old/edit_category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/admin/edit_exhibit.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/_old/edit_exhibit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/admin/edit_exhibition.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/_old/edit_exhibition.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/admin/edit_location.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/_old/edit_location.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/admin/showCategories.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/showCategories.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/admin/show_categories.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/_old/show_categories.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/admin/show_exhibitions.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/_old/show_exhibitions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/admin/show_exhibits.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/_old/show_exhibits.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/admin/show_locations.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/_old/show_locations.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/layouts/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/layouts/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/main/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/main/category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/main/exhibition.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/main/exhibition.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/main/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/main/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/exhibits/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/exhibits/exhibit.png" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +39,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1SpTDlXX0aev7CuMpRFgjtyHL9u" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -28,11 +54,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\museum\application\views\admin\_old" />
       <recent name="C:\xampp\htdocs\museumdb\application\views\main" />
       <recent name="C:\xampp\htdocs\museumdb\public\css" />
       <recent name="C:\xampp\htdocs\museumdb\application\views\account\_new" />
       <recent name="C:\xampp\htdocs\museumdb\application\views\main\_outdated" />
-      <recent name="C:\xampp\htdocs\museum\application\core" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\museumdb\application\views\account" />
@@ -42,15 +68,15 @@
       <recent name="C:\xampp\htdocs\museumdb\application\acl" />
     </key>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
+  <component name="RunDashboard">
+    <option name="ruleStates">
       <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
       </list>
     </option>
   </component>
@@ -73,6 +99,10 @@
       <workItem from="1576164986313" duration="2270000" />
       <workItem from="1576759555648" duration="1560000" />
       <workItem from="1576933095431" duration="1196000" />
+      <workItem from="1577432790300" duration="131000" />
+      <workItem from="1577432939581" duration="1942000" />
+      <workItem from="1578482294942" duration="2930000" />
+      <workItem from="1578645719359" duration="1214000" />
     </task>
     <servers />
   </component>

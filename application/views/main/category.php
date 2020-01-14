@@ -29,7 +29,7 @@
                 <?php foreach ($exhibits as $exhibit): ?>
                     <div class="single-exibition item">
                         <a href="/exhibit/<?php echo $exhibit['exhibit_id']; ?>">
-                            <img src="../../../public/img/e1.jpg" alt="">
+                            <img src="/public/img/exhibits/<?php echo $exhibit["exhibit_id"]; ?>.jpg" onerror="this.src='/public/img/exhibits/exhibit.png'" alt="">
                             <h4><?php echo $exhibit['name']; ?></h4>
                         </a>
                         <p><?php echo $exhibit['description']; ?></p>

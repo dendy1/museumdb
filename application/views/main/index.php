@@ -36,7 +36,7 @@
                         <a href="/exhibition/<?php echo $exhibition['exhibition_id']; ?>">
                             <div class="card-header">
                                 <img
-                                     src="/public/img/exhibitions/<?php echo $exhibition['exhibition_id']; ?>"
+                                     src="/public/img/exhibitions/<?php echo $exhibition['exhibition_id']; ?>.jpg"
                                      onerror="this.src='/public/img/exhibitions/exhibition.png'">
                             </div>
                         </a>
@@ -76,7 +76,7 @@
             <?php foreach ($exhibits as $exhibit): ?>
                 <a class="single-gallery" href="/exhibit/<?php echo $exhibit["id"]; ?>">
                     <div class="container">
-                        <img class="grid-item" src="/public/img/exhibits/<?php echo $exhibit["exhibit_id"]; ?>" onerror="this.src='/public/img/exhibits/exhibit.png'">
+                        <img class="grid-item" src="/public/img/exhibits/<?php echo $exhibit["exhibit_id"]; ?>.jpg" onerror="this.src='/public/img/exhibits/exhibit.png'">
                         <div class="centered"><?php echo $exhibit["name"]; ?></div>
                     </div>
                 </a>

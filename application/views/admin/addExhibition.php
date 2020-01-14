@@ -32,7 +32,7 @@
         <div class="form-group">
             <label class="control-label col-xs-3" for="start_date">Дата начала:</label>
             <div class="col-xs-9">
-                <input type="date" min="2015-01-01" max="<?php echo date('Y-m-d'); ?>" class="form-control" id="start_date" name="start_date"
+                <input type="date" class="form-control" id="start_date" name="start_date"
                        placeholder="Выберите дату начала" required>
             </div>
         </div>
@@ -40,7 +40,7 @@
         <div class="form-group">
             <label class="control-label col-xs-3" for="end_date">Дата конца:</label>
             <div class="col-xs-9">
-                <input type="date" min="2015-01-01" max="<?php echo date('Y-m-d'); ?>" class="form-control" id="end_date" name="end_date"
+                <input type="date" class="form-control" id="end_date" name="end_date"
                        placeholder="Выберите дату конца" required>
             </div>
         </div>
